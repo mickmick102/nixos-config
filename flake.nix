@@ -15,39 +15,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # COMING SOON...
-    #nixvim = {
-    #  url = "github:nix-community/nixvim";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
+    stateVersion = "24.11";
     user = "michael";
-    hosts = [
-      { hostname = "rivendell"; stateVersion = "24.11"; }
-    ];
-
-    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+    hostname = "rivendell";
+  in {
+    nix.settings.experimental-features = [ "nix-command" "flakes" ];
+    nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
       system = system;
-      specialArgs = {
-        inherit inputs stateVersion hostname user;
-      };
-
       modules = [
         ./hosts/${hostname}/configuration.nix
       ];
     };
-
-  in {
-    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-      configs // {
-        "${host.hostname}" = makeSystem {
-          inherit (host) hostname stateVersion;
-        };
-      }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
