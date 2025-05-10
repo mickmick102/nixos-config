@@ -4,8 +4,10 @@
   imports = [
     ./hardware-configuration.nix
     ./local-packages.nix
-    ../../nixos/modules
+    ../../nixos/modules/default.nix
   ];
+
+  programs.git.enable = true;
 
   environment.systemPackages = [ pkgs.home-manager ];
 

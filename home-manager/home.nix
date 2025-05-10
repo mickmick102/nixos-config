@@ -1,6 +1,6 @@
 { homeStateVersion, user, ... }: {
   imports = [
-    ./modules
+    ./modules/default.nix
     ./home-packages.nix
   ];
 

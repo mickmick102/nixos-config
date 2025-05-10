@@ -5,17 +5,17 @@
     ./chromium.nix
     ./eza.nix
     ./git.nix
-    ./hyprland
+    ./hyprland/default.nix
     ./lazygit.nix
     ./neovim.nix
     ./obsidian.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
-    ./swaync
+    ./swaync/default.nix
     ./tmux.nix
-    ./waybar
-    ./wofi
+    ./waybar/default.nix
+    ./wofi/default.nix
     ./zathura.nix
     ./zsh.nix
   ];

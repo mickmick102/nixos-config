@@ -17,23 +17,27 @@
 
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     stateVersion = "24.11";
     user = "michael";
     hostname = "rivendell";
   in {
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
-    nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
-      system = system;
+    #nix.settings.experimental-features = [ "nix-command" "flakes" ];
+   
+    nixosConfigurations.rivendell = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = {
+        inherit inputs hostname stateVersion user;
+      };
       modules = [
-        ./hosts/${hostname}/configuration.nix
+        ./hosts/rivendell/configuration.nix
       ];
     };
 
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
+    homeConfigurations.michael = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
       extraSpecialArgs = {
         inherit inputs homeStateVersion user;
       };
