@@ -5,17 +5,16 @@
     ./browser.nix
     ./eza.nix
     ./git.nix
-    ./hyprland/
+    ./hyprland
     ./lazygit.nix
     ./neovim.nix
-    ./obsidian.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
-    ./swaync/
+    ./swaync
     ./tmux.nix
-    ./waybar/
-    ./wofi/
+    ./waybar
+    ./wofi
     ./zathura.nix
     ./zsh.nix
     ./vscode.nix

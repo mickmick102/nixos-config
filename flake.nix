@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, stylix, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     stateVersion = "24.11";
@@ -23,12 +23,13 @@
     hostname = "rivendell";
   in {
     nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
-      system = ${system};
+      system = system;
       specialArgs = {
-        inherit inputs outputs user hostname system homeStateVersion stateVersion;
+        inherit inputs user hostname system homeStateVersion stateVersion;
       };
       modules = [
         ./hosts/${hostname}/configuration.nix
+	stylix.nixosModules.stylix
       ];
     };
 

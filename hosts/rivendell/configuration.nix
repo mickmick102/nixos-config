@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./local-packages.nix
-    ../../nixos/modules/
+    ../../nixos/modules
   ];
   
   environment.systemPackages = [ pkgs.home-manager ];

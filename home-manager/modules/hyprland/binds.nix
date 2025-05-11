@@ -1,7 +1,5 @@
 { pkgs, ... }:
 {
-  home.packages = [ booksScript ];
-
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod SHIFT, Return, exec, $terminal"

@@ -13,7 +13,7 @@
     ];
   };
 
-  programs.firefox {
+  programs.firefox = {
     enable = true;
-  }
+  };
 }

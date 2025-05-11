@@ -26,3 +26,4 @@
   - Multiple Terminal sharing
   - Fix Mouse and Keyboard additional buttons
   - Fix Grub with Windows
+  - Fix Time Linux and Windows
