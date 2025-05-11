@@ -5,44 +5,35 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    anki
-    code-cursor
-    imv
-    mpv
+    imv # Image Viewer
+    mpv # Media Player
     obs-studio
-    obsidian
-    pavucontrol
-    teams-for-linux
-    telegram-desktop
-    vesktop
+    pavucontrol # Sound Control
+    legcord # Discord
 
     # CLI utils
-    bc
-    bottom
-    brightnessctl
-    cliphist
-    ffmpeg
+    brightnessctl # Control brightness
+    cliphist # Clipboard history
+    ffmpeg # Video Encoding
     ffmpegthumbnailer
-    fzf
+    fzf # Fuzzy finder
     git-graph
-    grimblast
+    grimblast # Screenshot
     htop
-    hyprpicker
-    ntfs3g
-    mediainfo
-    microfetch
-    playerctl
-    ripgrep
-    showmethekey
+    hyprpicker # Color piquer
+    jq # JSon filter util
+    ntfs3g # NTFS Driver
+    mediainfo # Infos on Medias
+    microfetch # System information
+    playerctl # Player controler
     silicon
-    udisks
-    ueberzugpp
+    udisks # Disk management
+    ueberzugpp # Draw image inside sub screen
     unzip
-    w3m
     wget
-    wl-clipboard
-    wtype
-    yt-dlp
+    wl-clipboard # Clipboard utility
+    yt-dlp # Audio and Video downloader
+    yq
     zip
 
     # Coding stuff
@@ -51,13 +42,13 @@
     python311
 
     # WM stuff
-    libsForQt5.xwaylandvideobridge
-    libnotify
+    libsForQt5.xwaylandvideobridge # Wayland to X11 Video Streaming
+    libnotify # Send Desktop notification
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
 
     # Other
-    bemoji
-    nix-prefetch-scripts
+    bemoji # Emoji Picker
+    nix-prefetch-scripts # Nix Prefetch
   ];
 }

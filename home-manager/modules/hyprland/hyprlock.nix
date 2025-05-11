@@ -32,7 +32,7 @@
       input-field = [
         {
           size = "200, 50";
-          position = "0, -80";
+          position = "0, -200";
           monitor = "";
           dots_center = true;
           font_color = "rgb(235, 219, 178)";

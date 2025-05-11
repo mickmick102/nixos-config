@@ -12,4 +12,8 @@
       { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
     ];
   };
+
+  programs.firefox {
+    enable = true;
+  }
 }

@@ -1,4 +1,5 @@
 {
+  # ls command utility
   programs.eza = {
     enable = true;
     enableZshIntegration = true;

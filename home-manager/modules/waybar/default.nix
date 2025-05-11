@@ -9,7 +9,7 @@
         height = 30;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray"];
+        modules-right = [ "custom/weather" "pulseaudio" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -34,13 +34,13 @@
           };
         };
 
-        "hyprland/language" = {
-          format-en = "🇺🇸";
-          format-ru = "🇷🇺";
-          format-he = "🇮🇱";
-          min-length = 5;
-          tooltip = false;
-        };
+        # "hyprland/language" = {
+        #   format-en = "🇺🇸";
+        #   format-ru = "🇷🇺";
+        #   format-he = "🇮🇱";
+        #   min-length = 5;
+        #   tooltip = false;
+        # };
 
         "custom/weather" = {
           format = " {} ";
@@ -65,16 +65,16 @@
           on-click = "pavucontrol";
         };
 
-        "battery" = {
-          states = {
-            warning = 30;
-            critical = 1;
-          };
-          format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
-          format-alt = "{time} {icon}";
-          format-icons = ["" "" "" "" ""];
-        };
+        # "battery" = {
+        #   states = {
+        #     warning = 30;
+        #     critical = 1;
+        #   };
+        #   format = "{icon} {capacity}%";
+        #   format-charging = " {capacity}%";
+        #   format-alt = "{time} {icon}";
+        #   format-icons = ["" "" "" "" ""];
+        # };
 
         "clock" = {
           format = "{:%d.%m.%Y - %H:%M}";

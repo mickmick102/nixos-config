@@ -2,21 +2,22 @@
   imports = [
     ./alacritty.nix
     ./bat.nix
-    ./chromium.nix
+    ./browser.nix
     ./eza.nix
     ./git.nix
-    ./hyprland/default.nix
+    ./hyprland/
     ./lazygit.nix
     ./neovim.nix
     ./obsidian.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
-    ./swaync/default.nix
+    ./swaync/
     ./tmux.nix
-    ./waybar/default.nix
-    ./wofi/default.nix
+    ./waybar/
+    ./wofi/
     ./zathura.nix
     ./zsh.nix
+    ./vscode.nix
   ];
 }

@@ -1,4 +1,5 @@
 { lib, ... }: {
+  # Terminal
   programs.alacritty = {
     enable = true;
     settings = {

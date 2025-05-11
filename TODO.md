@@ -1,0 +1,28 @@
+# List of TODOs
+
+- Add Game platform
+  - Steam
+  - Epic games
+  - Others
+- Rework Hyprland
+  - Change Theme
+  - Configure Central theming for everything
+- Add more software
+  - BitWarden
+  - Spotify
+  - Podman
+  - Brave ?
+  - Gimp
+- Other
+  - Secret manager
+  - SSH Keys for Git etc.
+  - Mount Other Drives
+  - Change Bindings
+  - Manage RGD from software
+  - Validate All drivers
+  - Static IP
+  - Validate Hyprland Configs and utils needed
+- Fixes
+  - Multiple Terminal sharing
+  - Fix Mouse and Keyboard additional buttons
+  - Fix Grub with Windows

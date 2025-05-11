@@ -93,10 +93,6 @@
       windowrulev2 = [
         "bordersize 0, floating:0, onworkspace:w[t1]"
 
-        "float,class:(mpv)|(imv)|(showmethekey-gtk)"
-        "move 990 60,size 900 170,pin,noinitialfocus,class:(showmethekey-gtk)"
-        "noborder,nofocus,class:(showmethekey-gtk)"
-
         "workspace 3,class:(obsidian)"
         "workspace 3,class:(zathura)"
         "workspace 4,class:(com.obsproject.Studio)"

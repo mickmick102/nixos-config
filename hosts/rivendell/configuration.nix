@@ -4,11 +4,9 @@
   imports = [
     ./hardware-configuration.nix
     ./local-packages.nix
-    ../../nixos/modules/default.nix
+    ../../nixos/modules/
   ];
-
-  programs.git.enable = true;
-
+  
   environment.systemPackages = [ pkgs.home-manager ];
 
   networking.hostName = hostname;
