@@ -6,5 +6,5 @@
     xkb.layout = "cf";
     xkbVariant = "qwerty";
     #xkbOptions = "grp:win_space_toggle";
-  }
+  };
 }
