@@ -53,9 +53,9 @@
   # Enable home-manager and git
   programs.home-manager.enable = true;
 
-  environment.systemPackages = [
-    inputs.home-manager.packages.${pkgs.system}.default
-  ];
+  # environment.systemPackages = [
+  #   inputs.home-manager.packages.${pkgs.system}.default
+  # ];
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
