@@ -56,6 +56,14 @@
           ./nixos/configuration.nix
         ];
       };
+
+      nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          # > Our main nixos configuration file <
+          ./nixos/configuration.nix
+        ];
+      };
     };
 
     # # Standalone home-manager configuration entrypoint
