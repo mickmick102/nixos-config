@@ -2,7 +2,7 @@
   # Configure console keymap
   console.keyMap = "cf";
 
-  services.server = {
+  services.xserver = {
     xkb.layout = "cf";
     xkbVariant = "qwerty";
     #xkbOptions = "grp:win_space_toggle";
