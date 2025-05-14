@@ -4,7 +4,7 @@
 
   services.xserver = {
     xkb.layout = "cf";
-    xkbVariant = "qwerty";
+    xkb.variant = "qwerty";
     #xkbOptions = "grp:win_space_toggle";
   };
 }
