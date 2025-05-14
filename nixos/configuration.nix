@@ -22,6 +22,21 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ../hosts/rivendell/hardware-configuration.nix
+
+    # System config
+    ./audio.nix
+    ./bluetooth.nix
+    ./boot.nix
+    ./env.nix
+    ./hyprland.nix
+    ./kernel.nix
+    ./keyboard.nix
+    ./mime.nix
+    ./net.nix
+    ./nh.nix
+    ./time.nix
+    ./zram.nix
+
     inputs.home-manager.nixosModules.home-manager
   ];
 
@@ -69,11 +84,10 @@
   };
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs outputs; };
-    
+    extraSpecialArgs = { inherit inputs outputs; };    
     users = {
       # Import your home-manager configuration
-      michael = import ../home-manager/home.nix;
+      michael = import ../home-manager/users/michael.nix;
     };
   };
 
