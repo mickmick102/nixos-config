@@ -11,4 +11,6 @@
     ./zsh.nix
     ./qt.nix
   ];
+
+  home.stateVersion = "24.11";
 }
