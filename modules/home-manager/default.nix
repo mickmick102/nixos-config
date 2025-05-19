@@ -4,5 +4,6 @@
     ./swaync
     ./waybar
     ./wofi
+    ./stylix
   ];
 }
