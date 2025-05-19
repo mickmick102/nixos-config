@@ -1,8 +1,8 @@
 {
   imports = [
-    ../../common/home.nix
+    #../../common/home.nix
     ./user.nix
-    ./git.nix
+    #./git.nix
     #./lazyvim.nix
     #./alacritty.nix
     #./browser.nix
