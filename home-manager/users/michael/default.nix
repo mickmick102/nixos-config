@@ -3,7 +3,7 @@
     ../../common/home.nix
     ./user.nix
     ./git.nix
-    ./lazyvim.nix
+    #./lazyvim.nix
     ./alacritty.nix
     ./browser.nix
     ./starship.nix
