@@ -1,6 +1,6 @@
 {
   imports = [
-    #../../common/home.nix
+    ../../common/home.nix
     ./user.nix
     ./git.nix
     ./lazyvim.nix
@@ -11,6 +11,4 @@
     ./zsh.nix
     ./qt.nix
   ];
-
-  home.stateVersion = "24.11";
 }

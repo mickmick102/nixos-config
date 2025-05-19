@@ -38,7 +38,7 @@
     ./zram.nix
     ./fonts.nix
 
-    inputs.home-manager.nixosModules.home-manager
+    #inputs.home-manager.nixosModules.home-manager
   ];
 
   nixpkgs = {
