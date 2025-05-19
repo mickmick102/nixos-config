@@ -36,6 +36,7 @@
     ./nh.nix
     ./time.nix
     ./zram.nix
+    ./fonts.nix
 
     inputs.home-manager.nixosModules.home-manager
   ];
