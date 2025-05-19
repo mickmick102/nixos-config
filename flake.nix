@@ -24,6 +24,7 @@
     self,
     nixpkgs,
     home-manager,
+    stylix,
     ...
   } @ inputs: let
     inherit (self) outputs;
