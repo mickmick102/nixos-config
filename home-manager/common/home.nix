@@ -18,7 +18,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    #./home-packages.nix
+    ./home-packages.nix
   ];
 
   nixpkgs = {
@@ -53,9 +53,9 @@
   # Enable home-manager and git
   programs.home-manager.enable = true;
 
-  # environment.systemPackages = [
-  #   inputs.home-manager.packages.${pkgs.system}.default
-  # ];
+  environment.systemPackages = [
+    inputs.home-manager.packages.${pkgs.system}.default
+  ];
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
