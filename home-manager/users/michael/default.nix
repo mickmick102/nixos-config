@@ -4,9 +4,9 @@
     ./user.nix
     ./git.nix
     #./lazyvim.nix
-    ./alacritty.nix
-    ./browser.nix
-    ./starship.nix
+    #./alacritty.nix
+    #./browser.nix
+    #./starship.nix
     ./tmux.nix
     ./zsh.nix
     ./qt.nix
