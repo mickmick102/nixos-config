@@ -7,8 +7,8 @@
     #./alacritty.nix
     #./browser.nix
     #./starship.nix
-    ./tmux.nix
-    ./zsh.nix
-    ./qt.nix
+    #./tmux.nix
+    #./zsh.nix
+    #./qt.nix
   ];
 }
